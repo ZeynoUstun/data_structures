@@ -7,10 +7,10 @@ var $ = cheerio.load(content, {xml:{normalizeWhitespace:true} });
    
 
 $('td:nth-child(1)').each(function(i,elem) {
-
-//    if ( $(this).find('br').length ) {
-//        $(this).find('br').removeAttr('detailsBox','span');
-//    }
-        console.log($(elem).text());
+    var address = $(elem).contents().filter(function(){ 
+        return this.nodeType == 3; 
+        }).text();
+    
+        console.log(address);
+        
 });
-
