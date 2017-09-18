@@ -1,0 +1,17 @@
+var fs = require('fs');
+var cheerio = require('cheerio');
+
+var content = fs.readFileSync('../week_01/data/m09.txt');
+var $ = cheerio.load(content, {xml:{normalizeWhitespace:true} });
+   
+var addresses= [];
+
+$('td').each(function(i, elem) {
+    if ($(elem).attr('style') == "border-bottom:1px solid #e3e3e3; width:260px") {
+        var address = $(elem).contents().get(6).nodeValue;
+        addresses.push(address.split(',').splice(-3)[0] + ' ,New York, NY ' );
+    }
+});
+
+ console.log(addresses);
+
