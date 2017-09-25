@@ -1,0 +1,105 @@
+var collName = 'ManhattanAAAMeetings';
+
+    // Retrieve
+var MongoClient = require('mongodb').MongoClient; 
+
+    //Connect to the db
+MongoClient.connect("mongodb://localhost:27017/AAAMeetings", function(err, db) {
+  if(err) { return console.dir(err); }
+        
+        var collection = db.collection(collName);
+        collection.insert(  
+{
+  _id:"Harlem Childrens Zone Admin. Offices",
+    address: "35 East 125 Street, Madison Avenue 10035",
+    room:"1st Floor Conference Room",
+    wheelchairAccess: true  
+},
+{
+  _id:"Saturdays",
+     hours: "4:15-5:30PM",
+     type: "Beginner",
+     building_id:"Harlem Childrens Zone Admin. Offices",
+},
+{
+  _id:"Peter Jay Sharpe Building",
+     address: "223 East 117th Street, NY 10035",
+     room:"1st Floor Dining Room",
+     wheelchairAccess: true,     
+},
+{
+  _id:"Tuesdays",
+    hours: "6:30-7:30PM",
+     type: "Beginner",
+     building_id:"Peter Jay Sharpe Building",
+},
+{
+  _id: "Grupo Nueva Vida",
+    address: "2126 2nd Avenue, 1st Floor,NY 10029",
+    room:"1st Floor",
+    wheelchairAccess: true, 
+},
+{
+  _id:"Sundays",
+    hours: "5:00-6:00PM",
+     type: "Open Discussion Meeting",
+     building_id:"Grupo Nueva Vida",
+},
+{
+  _id:"Mondays",
+     hours: "8:00-9:00PM",
+     type: "Beginner",
+     building_id:"Grupo Nueva Vida",
+},
+{
+  _id:"Tuesdays",
+    hours: "8:00-9:00PM",
+    type: "Open Discussion Meeting",
+    building_id:"Grupo Nueva Vida",
+},
+{
+  _id:"Wednesdays",
+     hours: "8:00-9:00PM",
+     type: "Closed Discussion Meeting",
+     building_id:"Grupo Nueva Vida",
+},
+{
+  _id:"Thursdays",
+     hours: "8:00-9:00PM",
+     type: "Open Discussion Meeting",
+     building_id:"Grupo Nueva Vida",
+},
+{
+  _id:"Fridays",
+     hours: "8:00-9:00PM",
+     type: "Open Discussion Meeting",
+     building_id:"Grupo Nueva Vida",
+},
+{
+  _id:"Saturdays",
+     hours: "8:00-9:00PM",
+     type: "Open Discussion Meeting",
+    building_id:"Grupo Nueva Vida",
+},
+{
+  _id:"Veterans Residence",
+     address: "22 East 119th Street, NY 10035",
+     room:"1st Floor",
+     wheelchairAccess: true, 
+},
+{
+  _id:"Sundays",
+    hours: "1:00-2:00PM",
+    type: "Tradition Meeting",
+    building_id:"Veterans Residence",
+},
+{
+  _id:"Mondays",
+    hours: "1:00-2:00PM",
+    type: "Beginner Meeting",
+    building_id:"Veterans Residence",
+}
+    
+    );
+        db.close();
+    }); 
