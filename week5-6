@@ -1,0 +1,36 @@
+var fs = require('fs');
+
+var dbName = 'AAAMeetings';
+var collName = 'ManhattanAAAMeetings';
+ 
+
+
+var eveningMeetings = [  
+    {$match : {hour:'8:00 PM - 9:00 PM'  }}, 
+    {$match : {day:'Tuesdays'  }}, 
+    ];
+
+// Connection URL
+var url = 'mongodb://' + process.env.IP + ':27017/' + dbName;
+
+// Retrieve
+var MongoClient = require('mongodb').MongoClient;
+
+MongoClient.connect(url, function(err, db) {
+    if (err) {return console.dir(err);}
+
+    var collection = db.collection(collName);
+
+    // Select three Citibike stations
+    collection.aggregate(eveningMeetings).toArray(function(err, docs) {   // buraya degistirdi
+        if (err) {console.log(err)}
+        
+        else {
+            console.log("Writing", docs.length, "documents as a result of this aggregation.");
+            fs.writeFileSync('mongo_aggregation_result.JSON', JSON.stringify(docs, null, 4));
+        }
+        db.close();
+        
+    });
+
+}); //MongoClient.connect
