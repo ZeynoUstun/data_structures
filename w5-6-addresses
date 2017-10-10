@@ -1,0 +1,12 @@
+[ { "address": "35 East 125 Street ,New York, NY",
+    "building_id":"Harlem Childrens Zone Admin. Offices",
+    "latLong": { "lat": 40.8062039, "lng": -73.9410197 } },
+  { "address": "223 East 117th Street ,New York, NY",
+    "building_id":"Peter Jay Sharpe Building",
+    "latLong": { "lat": 40.7982895, "lng": -73.93824889999999 } },
+  { "address": "2126 2nd Avenue ,New York, NY",
+    "building_id": "Grupo Nueva Vida",
+    "latLong": { "lat": 40.7926781, "lng": -73.9406285 } },
+  { "address":  "22 East 119th Street ,New York, NY",
+    "building_id":"Veterans Residence",
+    "latLong": { "lat": 40.8020301, "lng": -73.9442569 } } ]
