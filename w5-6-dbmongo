@@ -1,0 +1,19 @@
+var fs = require('fs');  
+var dbName = 'AAAMeetings'; 
+var collName = 'ManhattanAAAMeetings'; 
+
+var addresses = JSON.parse(
+       fs.readFileSync('../week_03/time.txt')
+       );
+
+   var url = 'mongodb://' + process.env.IP + ':27017/' + dbName;
+   var MongoClient = require('mongodb').MongoClient;
+   MongoClient.connect(url, function(err, db) {
+       if (err) {return console.dir(err);}
+
+       var collection = db.collection(collName);
+       // THIS IS WHERE THE DOCUMENT(S) IS/ARE INSERTED TO MONGO:
+       collection.insert(addresses);
+       db.close();
+
+   }); //MongoClient.connect
