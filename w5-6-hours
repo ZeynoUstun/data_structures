@@ -1,0 +1,62 @@
+[{  "building_id":"Harlem Childrens Zone Admin. Offices",
+    "day": "Saturdays", 
+    "hour" : "4:15 PM - 5:30 PM", 
+    "Meeting Type" : "B-Beginners meeting"
+},
+{   "building_id":"Peter Jay Sharpe Building",
+    "day": "Tuesdays", 
+    "hour" : "6:30 PM - 7:30 PM", 
+    "Meeting Type" : "B = Beginners meeting"
+},
+{   "building_id": "Grupo Nueva Vida",
+    "day": "Saturdays", 
+    "hour" : "5:00 PM - 6:00 PM", 
+    "Meeting Type" : "OD = Open Discussion meeting"
+},
+{   "building_id": "Grupo Nueva Vida",
+    "day": "Mondays", 
+    "hour" : "8:00 PM - 9:00 PM", 
+    "Meeting Type" : "B = Beginners meeting "
+},
+{   "building_id": "Grupo Nueva Vida",
+    "day": "Tuesdays", 
+    "hour" : "8:00 PM - 9:00 PM", 
+    "Meeting Type" : "OD = Open Discussion meeting"
+},
+{   "building_id": "Grupo Nueva Vida",
+    "day": "Wednesdays", 
+    "hour" : "8:00 PM - 9:00 PM", 
+    "Meeting Type" : "C = Closed Discussion meeting"
+},
+{   "building_id": "Grupo Nueva Vida",
+    "day": "Thursdays", 
+    "hour" : "8:00 PM - 9:00 PM", 
+    "Meeting Type" : "OD = Open Discussion meeting"
+},
+{   "building_id": "Grupo Nueva Vida",
+    "day": "Fridays", 
+    "hour" : "8:00 PM - 9:00 PM", 
+    "Meeting Type" : "OD = Open Discussion meeting"
+},
+{
+    "building_id": "Grupo Nueva Vida",
+    "day": "Saturdays", 
+    "hour" : "8:00 PM - 9:00 PM", 
+    "Meeting Type" : "OD = Open Discussion meeting"
+},
+{   "building_id": "Veterans Residence",
+    "day": "Sundays", 
+    "hour" : "1:00 PM - 2:00 PM", 
+    "Meeting Type" : "T = Tradition meeting"
+},
+{
+    "building_id": "Veterans Residence",
+    "day": "Mondays", 
+    "hour" : "1:00 PM - 2:00 PM", 
+    "Meeting Type" : "B = Beginners meeting "
+}]
+
+
+
+    
+
