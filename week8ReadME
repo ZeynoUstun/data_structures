@@ -1,0 +1,19 @@
+SQL Table statement:
+
+CREATE TABLE sensordata  
+(
+	id int, 
+	tilt int,
+	light int,
+	sensorTime timestamp DEFAULT current_timestamp
+);     
+
+
+INSERT INTO sensorsdata (id,titl,light) VALUES (1,0,2065);
+
+I am planing to maintain a relational database of my sensorsdata, where I measure my being a nocturnal or day light digital laborer - 
+
+he photon is hooked to my desk, that has a tray I open each time I sit. So tilt sensor will collect when I sit and how many hours I spend on my desk typing, (I checked though not really reliable, typing shakes the tray good enough to get that data in some occasions). 
+
+ID  Tilt Light 
+1    0    2065 
